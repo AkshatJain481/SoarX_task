@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Wheel</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .wheel-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+
+        .wheel {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            margin-top: -50px;
+            margin-left: -50px;
+            border: 10px solid;
+            border-radius: 50%;
+            border-color: blue red pink green;
+            transition: transform 2s ease-in-out;
+            
+        }
+        :hover.wheel{
+            transform: rotate(720deg);
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div class="wheel-container">
+        <div class="wheel"></div>
+    </div>
+</body>
+</html>
